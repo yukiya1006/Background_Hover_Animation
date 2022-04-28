@@ -1,0 +1,59 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+
+}
+
+section .row {
+  display: flex;
+  white-space: nowrap;
+  font-size: 70px;
+  padding: 10px 0;
+  transform: rotate(-30deg);
+  position: relative;
+  top: -50%;
+}
+
+i {
+  color: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+
+i:hover {
+  color: rgb(200, 3, 200);
+  text-shadow: 0 0 120px rgb(206, 2, 206);
+  transition: 0s;
+}
+
+section .row div {
+  animation: hoverAnimate 60s linear infinite;
+}
+
+@keyframes hoverAnimate {
+  form {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgb(123, 255, 47);
+  opacity: 0.7;
+  text-shadow: 0 0 100px rgb(102, 255, 47);
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 4rem;
+}
